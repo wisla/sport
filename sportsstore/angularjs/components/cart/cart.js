@@ -1,6 +1,3 @@
-/**
- * Created by Andrzej on 2016-01-10.
- */
 angular.module("cart", [])
     .factory("cart", function () {
         var cartData = [];
@@ -45,7 +42,7 @@ angular.module("cart", [])
                         total += (cartData[i].price * cartData[i].count);
                     }
                     return total;
-                }
+                };
                 $scope.itemCount = function () {
                     var total = 0;
                     for (var i = 0; i < cartData.length; i++) {
